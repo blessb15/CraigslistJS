@@ -1,0 +1,7 @@
+{{#each sortedListings as |listing|}}
+  {{#link-to 'listing' listing.id}}<img src="{{listing.img}}" alt="listed image" width="150px">
+  <br>
+  <p>{{listing.name}}</p>
+  <p>{{listing.date}}</p>
+  {{/link-to}}
+{{/each}}

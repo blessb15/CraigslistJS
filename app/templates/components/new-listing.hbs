@@ -1,0 +1,15 @@
+{{#if newListing}}
+<form>
+  <label for="name">Listing Name</label>
+  {{input value=name id="name"}}
+  <label for="info">Listing Info</label>
+  {{input value=info id="info"}}
+  <label for="date">Listing Date</label>
+  {{input value=date id="date"}}
+  <label for="img">Listing Image</label>
+  {{input value=img id="img"}}
+  <button {{action 'save' category}}>Save</button>
+</form>
+{{else}}
+  <button {{action 'showForm'}}>Add a Listing</button>
+{{/if}}

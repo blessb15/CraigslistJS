@@ -1,0 +1,17 @@
+{{#if showUpdate}}
+<form>
+  <label for="name">Listing Name</label>
+  {{input value=name id="name"}}
+  <label for="info">Listing Info</label>
+  {{input value=info id="info"}}
+  <label for="date">Listing Date</label>
+  {{input value=date id="date"}}
+  <label for="img">Listing Image</label>
+  {{input value=img id="img"}}
+  <button {{action 'update' listing}}>Save</button>
+</form>
+{{else}}
+  <button {{action 'updateForm'}}>Update this Listing</button>
+{{/if}}
+
+<button {{action 'delete' listing}}>Delete this Listing</button>
